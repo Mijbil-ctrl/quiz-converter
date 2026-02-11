@@ -1,0 +1,24 @@
+<html>
+<body>
+
+<h2>Attempt Quiz</h2>
+
+<form method="POST">
+
+{% for q in questions %}
+<p>{{ loop.index }}. {{ q }}</p>
+
+<input type="radio" name="answer" value="A"> A
+<input type="radio" name="answer" value="B"> B
+<input type="radio" name="answer" value="C"> C
+<input type="radio" name="answer" value="D"> D
+
+<br><br>
+{% endfor %}
+
+<button type="submit">Submit Quiz</button>
+
+</form>
+
+</body>
+</html>
